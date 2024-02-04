@@ -1,16 +1,27 @@
-git hub session 
+The difference between window,screen and document in javascipt
 
+window: The window object represents the browser window that contains the document. It is the global object in client-side JavaScript and provides access to various properties and methods related to the browser window. Some common properties and methods of the window object include:
 
-git init
-git remote add origin [gitLink] see in your github repository under the push an existing repository from the command line
-git remote -v
-git add .
-git commit -m "First commit"
-git branch -M main
+window.innerHeight: Returns the inner height of the browser window.
+window.innerWidth: Returns the inner width of the browser window.
+window.location: Provides information about the current URL and allows navigation to other URLs.
+window.alert(), window.confirm(), window.prompt(): Methods for displaying dialog boxes.
+window.setTimeout(), window.setInterval(): Methods for executing code after a specified delay or at regular intervals.
+Essentially, window acts as the global namespace for browser-related operations and provides access to the browser's features and functionalities.
 
-git push origin main
+screen: The screen object represents the user's screen or monitor. It provides information about the user's screen such as its width, height, color depth, and pixel density. Some common properties of the screen object include:
 
+screen.width: Returns the width of the screen.
+screen.height: Returns the height of the screen.
+screen.availWidth: Returns the available width of the screen (excluding taskbars, etc.).
+screen.availHeight: Returns the available height of the screen (excluding taskbars, etc.).
+screen.pixelDepth: Returns the color depth of the screen in bits per pixel.
+The screen object is useful for web applications that need to adjust their layout or behavior based on the user's screen size or resolution.
 
-in case for the first time
-git config --global user.name "someone"
-git config --global user.email "someone@someplace.com"
+document: The document object represents the HTML document loaded in the browser window. It provides access to the structure and content of the document, allowing JavaScript code to manipulate and interact with the elements on the page. Some common properties and methods of the document object include:
+
+document.getElementById(), document.querySelector(): Methods for selecting and accessing DOM elements.
+document.createElement(), document.createTextNode(): Methods for creating new DOM elements and text nodes.
+document.getElementById('elementId').innerHTML: Property for accessing or modifying the HTML content of an element.
+document.addEventListener(), document.removeEventListener(): Methods for adding and removing event listeners to DOM elements.
+The document object is central to client-side web development as it allows JavaScript code to dynamically update and interact with the content of web pages.
